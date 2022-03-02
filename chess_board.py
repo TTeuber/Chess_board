@@ -56,9 +56,10 @@ while True:
     elif square_input not in squares:
         print('not a square on board (a1 to h8)')
         continue
+    # check if piece already on square, ask to remove current piece
     if board[square_input] != '':
         print('piece already on that square')
-        choice = input('remove current piece? y/n').lower()
+        choice = input('remove current piece? y/n ').lower()
         if choice == 'y':
             color_pieces.append(board[square_input])
         else:
