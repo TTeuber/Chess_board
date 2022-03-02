@@ -1,4 +1,4 @@
-import pprint
+import pprint # for printing dictionary in a better format
 
 # create a list of square names
 letters = 'abcdefgh'
